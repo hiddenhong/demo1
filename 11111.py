@@ -4,6 +4,9 @@ import urllib
 import json #simplejson
 from bs4 import BeautifulSoup
 
+def login():
+	if user='ming' and pwd='123':
+		return True
 
 
 def get_content_from_keyword(keyword='鞋子',page=1):
@@ -56,4 +59,4 @@ if __name__ == "__main__":
         data['price'] = filter(lambda price:price['id'] == 'J_%s'%data['id'] ,prices)[0]['p']
         res.append(data)
 
-    print res
+    print(res)
