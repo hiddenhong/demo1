@@ -4,6 +4,11 @@ import urllib
 import json #simplejson
 from bs4 import BeautifulSoup
 
+def login():
+	if user='ming' and pwd='123':
+		return True
+
+
 def get_content_from_keyword(keyword='鞋子',page=1):
     """
     根据页数和keywords采集内容
